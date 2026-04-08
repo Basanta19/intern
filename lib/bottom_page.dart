@@ -11,20 +11,49 @@ class BottomPage extends StatefulWidget {
 }
 
 class _BottomPageState extends State<BottomPage> {
+  late final PageController _pageController;
+
+  @override
+  void initState() {
+    super.initState();
+    _pageController = PageController(initialPage: 0);
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
   int _selectedIndex = 0;
   void _onitemTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
+    _pageController.animateToPage(
+      index,
+      duration: Duration(milliseconds: 300),
+      curve: Curves.easeInOut,
+    );
   }
-
-  final List<Widget> _pages = [Userhome(), UserSearch(), UserProfile()];
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: _pages[_selectedIndex],
+        body: PageView(
+          controller: _pageController,
+          physics: NeverScrollableScrollPhysics(),
+          children: [
+            Userhome(
+              onSwitchTapped: () {
+                _onitemTapped(1);
+              },
+            ),
+            UserSearch(),
+            UserProfile(),
+          ],
+        ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedIndex,
           onTap: _onitemTapped,

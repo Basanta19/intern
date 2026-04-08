@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/bottom_page.dart';
-// import 'package:flutter_application_1/gesture.dart';
-// import 'package:flutter_application_1/homepage.dart';
+// // import 'package:flutter_application_1/homepage.dart';
 // import 'package:flutter_application_1/gesture.dart';
 
 void main() {
