@@ -50,7 +50,11 @@ class _BottomPageState extends State<BottomPage> {
                 _onitemTapped(1);
               },
             ),
-            UserSearch(),
+            UserSearch(
+              onSwitchTapped: () {
+                _onitemTapped(2);
+              },
+            ),
             UserProfile(),
           ],
         ),
