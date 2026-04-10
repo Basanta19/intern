@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/list_view.dart';
 // import 'package:flutter_application_1/bottom_page.dart';
-import 'package:flutter_application_1/page.dart';
+// import 'package:flutter_application_1/page.dart';
 // // import 'package:flutter_application_1/homepage.dart';
 // import 'package:flutter_application_1/gesture.dart';
 
 void main() {
-  runApp(const PageViewExample());
+  runApp(const ListViewExample());
 }
 
 class MainApp extends StatelessWidget {
