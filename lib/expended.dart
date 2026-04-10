@@ -7,11 +7,13 @@ class Expendedview extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Column(
+        body: Row(
           children: [
-            Container(height: 100, width: 100, color: Colors.red),
-            Expanded(child: Container(height: 100, color: Colors.green)),
-            Container(height: 100, width: 100, color: Colors.blue),
+            Expanded(flex: 3, child: Container(color: Colors.red)),
+            Expanded(flex: 3, child: Container(color: Colors.green)),
+            Expanded(flex: 3, child: Container(color: Colors.blue)),
+            Expanded(flex: 3, child: Container(color: Colors.yellow)),
+            Expanded(flex: 3, child: Container(color: Colors.purple)),
           ],
         ),
       ),
