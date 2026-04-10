@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/bottom_page.dart';
+// import 'package:flutter_application_1/bottom_page.dart';
+import 'package:flutter_application_1/page.dart';
 // // import 'package:flutter_application_1/homepage.dart';
 // import 'package:flutter_application_1/gesture.dart';
 
 void main() {
-  runApp(const BottomPage());
+  runApp(const PageViewExample());
 }
 
 class MainApp extends StatelessWidget {
