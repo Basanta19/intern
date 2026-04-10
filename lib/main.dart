@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/rows_colms.dart';
-import 'package:flutter_application_1/scroll_page.dart';
+import 'package:flutter_application_1/bar.dart';
+// import 'package:flutter_application_1/rows_colms.dart';
+// import 'package:flutter_application_1/scroll_page.dart';
 // import 'package:flutter_application_1/pages/list_view.dart';
 // import 'package:flutter_application_1/bottom_page.dart';
 // import 'package:flutter_application_1/page.dart';
@@ -9,7 +10,7 @@ import 'package:flutter_application_1/scroll_page.dart';
 // import 'package:flutter_application_1/expended.dart';
 
 void main() {
-  runApp(const RowColms());
+  runApp(const Bar());
 }
 
 class MainApp extends StatelessWidget {
