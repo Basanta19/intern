@@ -55,7 +55,11 @@ class _BottomPageState extends State<BottomPage> {
                 _onitemTapped(2);
               },
             ),
-            UserProfile(),
+            UserProfile(
+              onSwitchTapped: (() {
+                _onitemTapped(0);
+              }),
+            ),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
