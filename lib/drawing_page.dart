@@ -13,6 +13,17 @@ class DrawingPage extends StatelessWidget {
         title: Text('Drawing Page'),
         backgroundColor: Colors.green,
       ),
+      body: Center(
+        child: Container(
+          color: Colors.green[200],
+          child: Center(
+            child: Text(
+              'This is the drawing page',
+              style: TextStyle(fontSize: 30),
+            ),
+          ),
+        ),
+      ),
       drawer: Drawer(
         child: Container(
           color: Colors.pink[200],
