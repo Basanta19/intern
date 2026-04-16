@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/bar.dart';
+// import 'package:flutter_application_1/bar.dart';
+import 'package:flutter_application_1/drawing_page.dart';
 // import 'package:flutter_application_1/rows_colms.dart';
 // import 'package:flutter_application_1/scroll_page.dart';
 // import 'package:flutter_application_1/pages/list_view.dart';
@@ -10,7 +11,9 @@ import 'package:flutter_application_1/bar.dart';
 // import 'package:flutter_application_1/expended.dart';
 
 void main() {
-  runApp(const Bar());
+  runApp(
+    const MaterialApp(debugShowCheckedModeBanner: false, home: DrawingPage()),
+  );
 }
 
 class MainApp extends StatelessWidget {

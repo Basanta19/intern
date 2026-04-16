@@ -16,7 +16,7 @@ class Bar extends StatelessWidget {
             'F L U T T E R   A P P',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-          leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
+          // leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
           actions: [IconButton(onPressed: () {}, icon: Icon(Icons.person))],
         ),
       ),
