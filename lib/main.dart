@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/anicontai.dart';
+// import 'package:flutter_application_1/anicontai.dart';
+import 'package:flutter_application_1/richhhh.dart';
 // import 'package:flutter_application_1/scroll_page.dart';
 // import 'package:flutter_application_1/slide.dart';
 // import 'package:flutter_application_1/blank.dart';
@@ -33,7 +34,7 @@ class MainApp extends StatelessWidget {
       // theme: lightTheme,
       // darkTheme: darkTheme,
       themeMode: ThemeMode.dark,
-      home: Animecont(),
+      home: Richcont(),
     );
   }
 }
