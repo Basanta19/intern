@@ -12,7 +12,7 @@ class Blankpage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          backgroundColor: Colors.yellow,
+          backgroundColor: Theme.of(context).colorScheme.secondary,
           title: Text("Dashboard", style: TextStyle(fontSize: 30)),
 
           leading: IconButton(

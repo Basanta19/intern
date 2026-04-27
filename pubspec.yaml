@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   phosphor_flutter: ^2.1.0
+  lottie: ^1.2.1
+  flutter_slidable: ^4.0.3
 
 dev_dependencies:
   flutter_test:

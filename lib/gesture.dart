@@ -13,6 +13,7 @@ class GestureAppState extends State<GestureApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // theme: ThemeData.dark(),
       home: Scaffold(
         body: Center(
           child: GestureDetector(
