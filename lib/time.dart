@@ -10,7 +10,7 @@ class Timepage extends StatefulWidget {
 }
 
 class _TimepageState extends State<Timepage> {
-  int timeleft = 5;
+  int timeleft = 10;
 
   void _startCountDown() {
     Timer.periodic(Duration(seconds: 1), (timer) {
