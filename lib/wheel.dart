@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/apm.dart';
 import 'package:flutter_application_1/hours.dart';
 import 'package:flutter_application_1/minutes.dart';
+import 'package:flutter_application_1/slidepage.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 class WheelPage extends StatefulWidget {
@@ -36,6 +37,24 @@ class _WheelPageState extends State<WheelPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[800],
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+        elevation: 0,
+        title: Text(
+          'Wheel Clock',
+          style: TextStyle(color: Colors.pink, fontSize: 50),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(
+              context,
+            ).push(MaterialPageRoute(builder: (context) => const Slidepage()));
+          },
+          icon: Icon(PhosphorIcons.arrowLeft()),
+        ),
+      ),
+
       body: Stack(
         children: [
           Row(

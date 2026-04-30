@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/wheel.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:slide_to_act/slide_to_act.dart';
 
@@ -27,9 +28,9 @@ class _SlidepageState extends State<Slidepage> {
             text: 'Slide to Open',
             textStyle: TextStyle(color: Colors.black, fontSize: 30),
             onSubmit: () async {
-              await Future.delayed(Duration(seconds: 2));
-
-              //do something
+              Navigator.of(
+                context,
+              ).push(MaterialPageRoute(builder: (context) => WheelPage()));
             },
           ),
         ),

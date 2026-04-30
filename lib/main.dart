@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/slidepage.dart';
+import 'package:flutter_application_1/wheel.dart';
 
 void main() {
   runApp(const MainApp());
@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
       // theme: lightTheme,
       // darkTheme: darkTheme,
       // themeMode: ThemeMode.dark,
-      home: Slidepage(),
+      home: WheelPage(),
     );
   }
 }
