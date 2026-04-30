@@ -8,15 +8,13 @@ class MyMinute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text(
-          min < 10 ? '0$min' : min.toString(),
-          style: TextStyle(
-            fontSize: 40,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
+    return Center(
+      child: Text(
+        min < 10 ? '0$min' : min.toString(),
+        style: TextStyle(
+          fontSize: 40,
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
         ),
       ),
     );

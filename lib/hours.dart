@@ -8,15 +8,13 @@ class MyHours extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text(
-          hours.toString(),
-          style: TextStyle(
-            fontSize: 40,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-          ),
+    return Center(
+      child: Text(
+        hours.toString(),
+        style: TextStyle(
+          fontSize: 40,
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
         ),
       ),
     );
