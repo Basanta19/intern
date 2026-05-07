@@ -43,7 +43,11 @@ class _WheelPageState extends State<WheelPage> {
         elevation: 0,
         title: Text(
           'Wheel Clock',
-          style: TextStyle(color: Colors.pink, fontSize: 50),
+          style: TextStyle(
+            color: Colors.pink,
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         leading: IconButton(
           onPressed: () {
